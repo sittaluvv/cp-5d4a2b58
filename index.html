@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="googlebot" content="noindex,nofollow">
+<title>Habibi PAC — Concept Preview (not an official site)</title>
+<meta name="description" content="Concept preview prepared for Habibi PAC. Not an official site.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&family=Amiri:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b1a3a;--navy2:#13285a;--blue:#00274c;--gold:#ffcb05;--gold2:#e8b100;--cream:#fbf6ea;--ink:#0b1a3a;--muted:#4a5878}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:17px;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:44px;background:#fff;padding:8px 12px;z-index:99}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.preview{background:var(--gold);color:var(--navy);text-align:center;font:600 13px/1.4 Inter;padding:8px 16px;letter-spacing:.02em}
+.ph{background:#fff3c4;color:#6b4e00;font:600 .72em Inter;padding:1px 6px;border-radius:4px;white-space:nowrap;vertical-align:middle}
+header.nav{position:sticky;top:0;z-index:20;background:rgba(11,26,58,.94);backdrop-filter:blur(8px);color:#fff}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:900 22px Fraunces,serif;letter-spacing:-.01em;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo b{color:var(--gold)}
+.logo .ar{font-family:Amiri,serif;color:var(--gold);font-size:24px}
+nav ul{display:flex;gap:26px;list-style:none;font-size:14px;font-weight:500}
+nav a{text-decoration:none;opacity:.85}nav a:hover{opacity:1;color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 15px Inter;padding:14px 24px;border-radius:999px;border:0;cursor:pointer;text-decoration:none}
+.btn-gold{background:var(--gold);color:var(--navy)}.btn-gold:hover{background:#ffd84a}
+.btn-ghost{border:2px solid rgba(255,255,255,.5);color:#fff;background:transparent}
+.btn-sm{padding:9px 18px;font-size:14px}
+/* hero */
+.hero{background:radial-gradient(1200px 600px at 85% 20%,#1d3a7a 0,transparent 60%),var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-top:72px;padding-bottom:96px;position:relative;z-index:2}
+.bgword{position:absolute;right:-40px;bottom:-90px;font:700 380px/1 Amiri,serif;color:rgba(255,203,5,.06);z-index:1;pointer-events:none;direction:rtl}
+.eyebrow{display:inline-block;font:700 12px Inter;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:22px}
+.hero h1{font:900 clamp(48px,8vw,112px)/.92 Fraunces,serif;letter-spacing:-.03em}
+.hero h1 em{font-style:italic;color:var(--gold);font-weight:800}
+.hero .def{margin:26px 0 8px;font:500 18px Inter;color:#cfd8ee}
+.hero .def b{font:700 26px Amiri,serif;color:var(--gold);margin-right:6px}
+.hero p.lead{font-size:20px;max-width:560px;color:#e7ecf8;margin:14px 0 34px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.portrait{position:relative}
+.portrait .frame{border-radius:220px 220px 24px 24px;overflow:hidden;border:6px solid var(--gold);box-shadow:0 40px 80px rgba(0,0,0,.45);aspect-ratio:4/5;background:#1d3a7a}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.portrait .tag{position:absolute;left:-28px;bottom:36px;background:#fff;color:var(--navy);padding:14px 18px;border-radius:14px;font:700 14px Inter;box-shadow:0 18px 40px rgba(0,0,0,.3);max-width:230px}
+.portrait .tag span{display:block;font:900 22px Fraunces,serif;color:var(--blue)}
+.credit{font-size:11px;color:#9fb0d6;margin-top:10px}.credit a{color:#c8d4f0}
+/* chant strip */
+.chant{background:var(--gold);color:var(--navy);overflow:hidden}
+.chant ul{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 40px;list-style:none;padding:22px 24px;font:900 clamp(20px,2.6vw,30px) Fraunces,serif;letter-spacing:-.01em}
+.chant li::before{content:"✦";margin-right:14px;font-size:.6em;vertical-align:middle}
+section{padding:110px 0}
+.kicker{font:700 12px Inter;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin-bottom:14px}
+h2{font:900 clamp(36px,5vw,64px)/1 Fraunces,serif;letter-spacing:-.025em;margin-bottom:22px}
+.sub{font-size:19px;color:var(--muted);max-width:680px}
+/* what */
+.what .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+.card{background:#fff;border-radius:22px;padding:34px 30px;border:1px solid #ece3cc;position:relative}
+.card .n{font:900 56px/1 Fraunces,serif;color:var(--gold);-webkit-text-stroke:1px var(--gold2)}
+.card h3{font:800 24px Fraunces,serif;margin:14px 0 10px}
+.card p{color:var(--muted)}
+/* causes */
+.causes{background:var(--blue);color:#fff}
+.causes .sub{color:#c8d4f0}
+.chips{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:52px}
+.chip{border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:26px 22px;background:rgba(255,255,255,.04)}
+.chip .ic{width:44px;height:44px;border-radius:12px;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:22px;margin-bottom:16px}
+.chip h3{font:800 20px Fraunces,serif;margin-bottom:6px}
+.chip p{font-size:15px;color:#c8d4f0}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.pillar{background:var(--gold);color:var(--navy);border-radius:18px;padding:28px}
+.pillar small{font:700 11px Inter;letter-spacing:.16em;text-transform:uppercase}
+.pillar h3{font:900 28px/1.05 Fraunces,serif;margin-top:6px}
+/* why */
+.why .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.why figure img{border-radius:24px;aspect-ratio:3/2;object-fit:cover;width:100%;height:auto}
+.why figcaption{font-size:12px;color:var(--muted);margin-top:8px}
+.word{margin:10px 0 18px;font:700 clamp(80px,12vw,150px)/1.25 Amiri,serif;color:var(--gold2);direction:rtl;text-align:left}
+.why blockquote{font:500 italic 24px/1.4 Fraunces,serif;border-left:4px solid var(--gold);padding-left:20px;margin:24px 0}
+.why p{margin-bottom:16px;color:#2b3a5c}
+.facts{list-style:none;margin-top:26px;display:grid;gap:12px}
+.facts li{position:relative;padding-left:22px}
+.facts li::before{content:"";position:absolute;left:0;top:9px;width:10px;height:10px;border-radius:50%;background:var(--gold2)}
+/* gallery */
+.gallery{padding:0 0 110px}
+.gal{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:18px}
+.gal figure{margin:0}
+.gal img,.slot{border-radius:20px;aspect-ratio:4/3;object-fit:cover;width:100%;height:auto}
+.slot{display:grid;place-items:center;text-align:center;padding:20px;background:repeating-linear-gradient(45deg,#f1e8cf 0 14px,#f7f0dc 14px 28px);border:2px dashed #c9a84a;color:#6b4e00;font:600 15px Inter}
+.gal figcaption{font-size:12px;color:var(--muted);margin-top:8px}
+/* involved */
+.involve{background:var(--navy);color:#fff}
+.involve .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.involve .sub{color:#c8d4f0}
+form{background:#fff;color:var(--ink);border-radius:24px;padding:34px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font:600 13px Inter;margin:14px 0 6px}
+input,select{width:100%;padding:14px 16px;border:1.5px solid #cdd5e6;border-radius:12px;font:16px Inter;background:#fbfcff}
+input:focus,select:focus{border-color:var(--blue);outline:none;box-shadow:0 0 0 3px rgba(0,39,76,.15)}
+form .btn{width:100%;justify-content:center;margin-top:22px;background:var(--navy);color:#fff}
+.note{margin-top:14px;padding:12px 14px;border-radius:12px;background:#fff3c4;color:#5a4200;font-size:14px;display:none}
+.note.show{display:block}
+.fine{font-size:12px;color:var(--muted);margin-top:12px}
+/* donate */
+.donate{background:linear-gradient(135deg,var(--gold) 0,#ffd84a 100%);color:var(--navy);text-align:center}
+.donate h2{font-size:clamp(40px,6vw,80px)}
+.amts{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:34px 0 26px}
+.amts span{border:2px solid var(--navy);border-radius:999px;padding:12px 22px;font:700 16px Inter;opacity:.55}
+.donate .btn{background:var(--navy);color:#fff;font-size:17px;padding:18px 34px;cursor:not-allowed}
+.donate .disclaim{margin-top:16px;font-weight:600}
+footer{background:#06112a;color:#b7c3de;padding:60px 0 40px;font-size:14px}
+footer .paid{border:1.5px solid #c8d4f0;display:inline-block;padding:12px 16px;color:#fff;font-weight:600;margin-bottom:28px}
+footer h4{color:#fff;font:700 13px Inter;letter-spacing:.14em;text-transform:uppercase;margin:24px 0 10px}
+footer ol{padding-left:18px}footer li{margin-bottom:6px}
+@media (max-width:980px){
+ nav ul{display:none}
+ .hero .wrap,.why .wrap,.involve .wrap{grid-template-columns:1fr}
+ .hero .wrap{padding-top:44px;padding-bottom:70px;gap:40px}
+ .portrait{max-width:420px;margin:0 auto;width:100%}
+ .portrait .tag{left:-8px}
+ .what .grid,.three{grid-template-columns:1fr}
+ .chips{grid-template-columns:1fr 1fr}
+ .gal{grid-template-columns:1fr}
+ section{padding:76px 0}
+ .bgword{font-size:220px;bottom:-40px}
+}
+@media (max-width:560px){
+ body{font-size:16px}
+ .wrap{padding:0 20px}
+ .chips,.row{grid-template-columns:1fr}
+ .hero p.lead{font-size:18px}
+ .cta .btn{flex:1;justify-content:center}
+ form{padding:24px}
+ .logo{font-size:19px}
+ .chant li::before{margin-right:8px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="preview" role="note">Concept preview prepared for Habibi PAC. Not an official site.</div>
+<header class="nav">
+ <div class="wrap">
+  <a class="logo" href="#top" aria-label="Habibi PAC concept, home"><span class="ar" lang="ar" aria-hidden="true">حبيبي</span>Habibi <b>PAC</b></a>
+  <nav aria-label="Primary"><ul><li><a href="#what">What we do</a></li><li><a href="#causes">Who we back</a></li><li><a href="#why">Why Habibi</a></li><li><a href="#join">Get involved</a></li></ul></nav>
+  <a class="btn btn-gold btn-sm" href="#donate">Donate</a>
+ </div>
+</header>
+<main id="main">
+<section class="hero" id="top" aria-labelledby="h1" style="padding:0">
+ <div class="bgword" lang="ar" aria-hidden="true">حبيبي</div>
+ <div class="wrap">
+  <div>
+   <span class="eyebrow">A leadership PAC sponsored by Sen.-elect Abdul El-Sayed</span>
+   <h1 id="h1">Build the movement <em>you love.</em></h1>
+   <p class="def"><b lang="ar">حبيبي</b> <i>habibi</i> — Arabic for “my beloved.”</p>
+   <p class="lead">Habibi PAC raises money to support progressive candidates who will get money out of politics, put money in your pocket, and fight for Medicare for All. <span class="ph">[Placeholder copy]</span></p>
+   <div class="cta"><a class="btn btn-gold" href="#join">Join the movement</a><a class="btn btn-ghost" href="#donate">Chip in</a></div>
+  </div>
+  <div class="portrait">
+   <div class="frame"><img src="img/portrait.jpg" alt="Portrait of Abdul El-Sayed in a houndstooth blazer, looking off to the side" width="1100" height="1650"></div>
+   <div class="tag"><span>First Muslim</span>elected to the U.S. Senate</div>
+   <p class="credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Abdul_El-Sayed.jpg">Kenneth C. Zirkel</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons</p>
+  </div>
+ </div>
+</section>
+
+<div class="chant" aria-label="Core priorities"><ul><li>Money out of politics</li><li>Money in your pocket</li><li>Medicare for All</li></ul></div>
+
+<section class="what" id="what" aria-labelledby="what-h">
+ <div class="wrap">
+  <p class="kicker">What the PAC does</p>
+  <h2 id="what-h">Power for people who<br>fight for people.</h2>
+  <p class="sub">Habibi PAC is a leadership PAC — a committee separate from Abdul El-Sayed’s own campaign — built to help elect progressive allies. <span class="ph">[Placeholder copy below]</span></p>
+  <div class="grid">
+   <article class="card"><div class="n" aria-hidden="true">01</div><h3>Back candidates</h3><p>Direct support for progressive candidates running to make government work for working people. <span class="ph">[Placeholder copy]</span></p></article>
+   <article class="card"><div class="n" aria-hidden="true">02</div><h3>Build bench strength</h3><p>Helping first-time and next-generation leaders get on the ballot and win. <span class="ph">[Placeholder copy]</span></p></article>
+   <article class="card"><div class="n" aria-hidden="true">03</div><h3>Organize people</h3><p>Turning grassroots energy into volunteers, voters and lasting local power. <span class="ph">[Placeholder copy]</span></p></article>
+  </div>
+ </div>
+</section>
+
+<section class="causes" id="causes" aria-labelledby="causes-h">
+ <div class="wrap">
+  <p class="kicker">Who we back</p>
+  <h2 id="causes-h">Candidates who put<br>people first.</h2>
+  <p class="sub">Categories, not a candidate list — the PAC will announce its own slate. <span class="ph">[Placeholder copy]</span></p>
+  <div class="three">
+   <div class="pillar"><small>Priority one</small><h3>Money out of politics</h3></div>
+   <div class="pillar"><small>Priority two</small><h3>Money in your pocket</h3></div>
+   <div class="pillar"><small>Priority three</small><h3>Medicare for All</h3></div>
+  </div>
+  <div class="chips">
+   <div class="chip"><div class="ic" aria-hidden="true">✚</div><h3>Health champions</h3><p>Leaders fighting for universal health care. <span class="ph">[Placeholder]</span></p></div>
+   <div class="chip"><div class="ic" aria-hidden="true">⚖</div><h3>Clean-money reformers</h3><p>Candidates who refuse corporate PAC money. <span class="ph">[Placeholder]</span></p></div>
+   <div class="chip"><div class="ic" aria-hidden="true">⚒</div><h3>Pro-worker fighters</h3><p>Wages, unions and lower costs for families. <span class="ph">[Placeholder]</span></p></div>
+   <div class="chip"><div class="ic" aria-hidden="true">★</div><h3>New voices</h3><p>First-time candidates from the communities they serve. <span class="ph">[Placeholder]</span></p></div>
+  </div>
+ </div>
+</section>
+
+<section class="why" id="why" aria-labelledby="why-h">
+ <div class="wrap">
+  <div>
+   <p class="kicker">Why Habibi</p>
+   <div class="word" lang="ar" aria-hidden="true">حبيبي</div>
+   <h2 id="why-h">A word of love,<br>made a movement.</h2>
+   <p><i>Habibi</i> is an Arabic term of endearment meaning “my beloved.”<sup>[3]</sup> Abdul El-Sayed used it often on the campaign trail — including on election night in Detroit.</p>
+   <p>Now the word that answered division with warmth becomes the name of a committee to elect more leaders who fight for everyone. <span class="ph">[Placeholder copy]</span></p>
+   <blockquote>“JD, habibi, there is this delicious irony in the fact that you’re constitutionally obligated to swear me in in January.”<br><small style="font:500 13px Inter;font-style:normal">— Abdul El-Sayed, victory speech in Detroit, as reported by Al Jazeera<sup>[4]</sup></small></blockquote>
+   <ul class="facts">
+    <li>Born and raised in southeast Michigan; University of Michigan graduate, Rhodes Scholar with an Oxford doctorate in public health, and a Columbia medical degree.<sup>[5]</sup></li>
+    <li>Led the Detroit Health Department (2015–2017) and Wayne County’s Department of Health, Human &amp; Veterans Services (2023–2025).<sup>[5]</sup></li>
+    <li>The first Muslim American elected to the United States Senate.<sup>[4][5]</sup></li>
+    <li>Habibi PAC registered with the FEC as a leadership PAC on November 5–6, 2026.<sup>[1][2]</sup></li>
+    <li>Built around three ideas: money out of politics, money in your pocket, Medicare for All.<sup>[6][7]</sup></li>
+   </ul>
+  </div>
+  <figure>
+   <img src="img/crowd9.jpg" alt="Abdul El-Sayed speaking with open hands to a seated audience in front of an Abdul for US Senate banner" width="1920" height="1277">
+   <figcaption>Photo: <a href="https://commons.wikimedia.org/wiki/File:Abdul_El-Sayed_meet-and-greet_by_Conlan_Houston_9.jpg">Conlan Houston</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via Wikimedia Commons</figcaption>
+  </figure>
+ </div>
+</section>
+
+<div class="gallery" aria-label="Photos">
+ <div class="wrap gal">
+  <figure><img src="img/crowd3.jpg" alt="Abdul El-Sayed standing before a crowd at a meet-and-greet, a Michigan flag beside him" width="1920" height="1080"><figcaption>Photo: <a href="https://commons.wikimedia.org/wiki/File:Abdul_El-Sayed_meet-and-greet_by_Conlan_Houston_3.jpg">Conlan Houston</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></figcaption></figure>
+  <figure><img src="img/hearing.jpg" alt="Abdul El-Sayed testifying at a U.S. Senate committee hearing in 2024" width="920" height="612"><figcaption>Photo: <a href="https://commons.wikimedia.org/wiki/File:Abdul_El-Sayed_testifying_at_committee_hearing,_2024.jpg">U.S. Senate HELP Committee</a>, public domain</figcaption></figure>
+  <figure><div class="slot" role="img" aria-label="Placeholder for a campaign photo to be provided by the team">[Campaign photo:<br>provided by team]</div><figcaption>Placeholder slot</figcaption></figure>
+ </div>
+</div>
+
+<section class="involve" id="join" aria-labelledby="join-h">
+ <div class="wrap">
+  <div>
+   <p class="kicker">Get involved</p>
+   <h2 id="join-h">Join the<br>beloved community.</h2>
+   <p class="sub">Volunteer, host, organize, or just stay in the loop on the candidates we back. <span class="ph">[Placeholder copy]</span></p>
+  </div>
+  <form id="signup" novalidate aria-describedby="formnote">
+   <div class="row">
+    <div><label for="fn">First name</label><input id="fn" name="fn" autocomplete="off"></div>
+    <div><label for="zip">ZIP code</label><input id="zip" name="zip" inputmode="numeric" autocomplete="off"></div>
+   </div>
+   <label for="em">Email</label><input id="em" name="em" type="email" autocomplete="off">
+   <label for="int">I want to…</label>
+   <select id="int" name="int"><option>Stay updated</option><option>Volunteer</option><option>Host an event</option></select>
+   <button class="btn" type="submit">Count me in</button>
+   <p id="formnote" class="note" role="status" aria-live="polite"></p>
+   <p class="fine">Preview only: this form is not connected and sends nothing. The PAC will connect its own sign-up tool.</p>
+  </form>
+ </div>
+</section>
+
+<section class="donate" id="donate" aria-labelledby="don-h">
+ <div class="wrap">
+  <p class="kicker" style="color:var(--navy)">Donate</p>
+  <h2 id="don-h">Fuel the fight, habibi.</h2>
+  <p class="sub" style="margin:0 auto;color:#2b3a5c">Every contribution helps elect progressive allies. <span class="ph">[Placeholder copy]</span></p>
+  <div class="amts" aria-hidden="true"><span>$[amt]</span><span>$[amt]</span><span>$[amt]</span><span>Other</span></div>
+  <button class="btn" type="button" aria-disabled="true" id="donbtn">Donate — placeholder</button>
+  <p class="disclaim">Donations via ActBlue, connected by the PAC. This preview takes no payments.</p>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="paid">Paid for by Habibi PAC. Not authorized by any candidate or candidate’s committee. <span class="ph">[PAC to confirm wording]</span></div>
+  <p>Concept preview prepared for Habibi PAC. Not an official site. Not affiliated with or endorsed by Habibi PAC or Abdul El-Sayed.</p>
+  <h4>Sources</h4>
+  <ol>
+   <li><a href="https://docquery.fec.gov/pdf/896/202611069945349896/202611069945349896.pdf">FEC Form 1, Habibi PAC (C00964767), filed 11/06/2026</a></li>
+   <li><a href="https://www.fec.gov/data/candidate/S6MI00418/">FEC candidate page: El-Sayed, Abdul (sponsored leadership PAC: Habibi PAC)</a></li>
+   <li><a href="https://thehill.com/homenews/campaign/6204662-el-sayed-launches-habibi-pac/">The Hill, “El-Sayed launches Habibi PAC,” Nov 6, 2026</a></li>
+   <li><a href="https://www.aljazeera.com/news/2026/11/7/el-sayed-launches-habibi-pac-days-after-historic-michigan-senate-win">Al Jazeera, Nov 7, 2026</a></li>
+   <li><a href="https://en.wikipedia.org/wiki/Abdul_El-Sayed">Wikipedia: Abdul El-Sayed</a></li>
+   <li><a href="https://www.commondreams.org/news/medicare-for-all-abdul-el-sayed">Common Dreams: El-Sayed on Medicare for All</a></li>
+   <li><a href="https://thehill.com/homenews/campaign/6012536-abdul-el-sayed-michigan-democratic-primary-progressive-movement/">The Hill: El-Sayed primary win and slogan</a></li>
+  </ol>
+  <h4>Photo credits</h4>
+  <ol>
+   <li><a href="https://commons.wikimedia.org/wiki/File:Abdul_El-Sayed.jpg">Abdul El-Sayed</a> — Kenneth C. Zirkel, CC BY-SA 4.0. Resized.</li>
+   <li><a href="https://commons.wikimedia.org/wiki/File:Abdul_El-Sayed_meet-and-greet_by_Conlan_Houston_9.jpg">Meet-and-greet 9</a> — Conlan Houston, CC BY-SA 4.0. Resized.</li>
+   <li><a href="https://commons.wikimedia.org/wiki/File:Abdul_El-Sayed_meet-and-greet_by_Conlan_Houston_3.jpg">Meet-and-greet 3</a> — Conlan Houston, CC BY-SA 4.0. Resized.</li>
+   <li><a href="https://commons.wikimedia.org/wiki/File:Abdul_El-Sayed_testifying_at_committee_hearing,_2024.jpg">Testifying at committee hearing, 2024</a> — U.S. Senate HELP Committee, public domain.</li>
+  </ol>
+ </div>
+</footer>
+<script>
+document.getElementById('signup').addEventListener('submit',function(e){e.preventDefault();var n=document.getElementById('formnote');n.textContent='Thanks! This is a concept preview, so nothing was sent or saved.';n.classList.add('show');});
+document.getElementById('donbtn').addEventListener('click',function(){this.textContent='Placeholder: ActBlue to be connected by the PAC';});
+</script>
+</body>
+</html>
